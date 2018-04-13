@@ -1,0 +1,113 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: helvetica, sans-serif;
+}
+
+.indicator-bar {
+  z-index: 999;
+  position: absolute;
+  background-color: yellow;
+}
+
+.left {
+  left: 0px;
+  height: 100vh;
+  width: 8px;
+}
+
+.right {
+  right: 0px;
+  height: 100vh;
+  width: 8px;
+}
+
+.top {
+  top: 0px;
+  height: 8px;
+  width: 100vw;
+}
+
+.bottom {
+  bottom: 0px;
+  height: 8px;
+  width: 100vw;
+}
+
+.tiling-area {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.node {
+  flex: auto;
+}
+
+.tile {
+  position: relative;
+  background-color: #ebebeb;
+  outline: 8px solid #d0d0d0;
+  outline-offset: -8px;
+  height: 100%;
+}
+
+.splith {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.splitv {
+  height: 50%;
+}
+
+.shape {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.launcher {
+  position: absolute;
+  z-index: 999;
+  width: 500px;
+  height: 100px;
+  border-radius: 16px;
+  margin: 0 auto;
+  margin-top:-50px;
+  margin-left:-250px;
+  background-color: #ffffff;
+  left:50%;
+  top:50%;
+}
+
+.launcher-text {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 24px;
+  font-size: 32pt;
+  color: #121212;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.tile-active {
+  outline: 8px solid #707070;
+}
+
+.tile-splitvh {
+  width: 50%;
+}
+
+.tile-splitvv {
+  height: 50%;
+}
